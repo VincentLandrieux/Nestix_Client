@@ -1,0 +1,143 @@
+/*---Fonts---*/
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Bold.ttf") format("truetype");
+    font-weight: 800;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Medium.ttf") format("truetype");
+    font-weight: 600;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+@font-face {
+    font-family: "Roboto";
+    src: url("../font/Roboto-Light.ttf") format("truetype");
+    font-weight: 200;
+}
+/*Variables*/
+:root {
+  --main-color: #333;
+  --second-color: #fff;
+  --hight-color: #4169e7;
+  --back-color: #f9f9f9;
+  --btn-color: #efefef;
+}
+/*---GENERAL---*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-size: 16px;
+}
+p,a,h1,h2,h3,h4,h5,label{
+    font-family: "Roboto";
+    color: var(--main-color);
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+
+.btn{
+    cursor: pointer;
+}
+.data{
+    display: block;
+    margin: 10px;
+}
+.data > *{
+    display: block;
+}
+.data_input{
+    padding: 5px;
+    font-size: 1em;
+}
+.data_label{
+    font-size: 1.2em;
+}
+.data_message{
+    color: red;
+}
+.data_btn{
+    padding: 5px;
+    font-size: 1em;
+    border-radius: 2px;
+    border: 1px solid var(--main-color);
+}
+
+/*-Master header-*/
+.mast-header__abs{
+    position: absolute;
+    top: 0;
+}
+.mast-header__color{
+    background-color: var(--main-color);
+}
+.mast-header{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    z-index: 10;
+}
+.mast-header > *{
+    display: inline-block;
+}
+.mast-header_title{
+    font-size: 1.8em;
+    color: var(--second-color);
+}
+.mast-header_nav{
+    font-size: 1.1em;
+}
+.mast-header_nav_link{
+    margin-left: 10px;
+    font-weight: 800;
+    color: #ddd;
+}
+.mast-header_nav_link:hover{
+    color: var(--second-color);
+}
+.mast-header_nav_link.active{
+    color: var(--second-color);
+}
+
+main{
+    min-height: 100vh;
+}
+
+/*-Master footer-*/
+.mast-footer{
+    padding: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    background-color: var(--main-color);
+}
+.mast-footer_title{
+    font-size: 1.4em;
+    color: var(--second-color);
+    margin-bottom: 10px;
+}
+.mast-footer_nav > *{
+    margin-bottom: 5px;
+}
+.mast-footer_nav_link{
+    color: var(--second-color);
+}
+.mast-footer_nav_link:hover{
+    color: var(--hight-color);
+}

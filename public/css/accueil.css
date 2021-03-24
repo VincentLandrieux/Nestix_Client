@@ -1,0 +1,130 @@
+/*-Main header-*/
+.main-header{
+    width: 100%;
+    height: 100vh;
+    padding: 10px;
+
+    background-color: var(--main-color);
+    box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+    background-size: cover;
+    background-position: bottom;
+    background-image: url("../image/background.jpg");
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.main-header_title{
+    padding-bottom: 10px;
+    font-size: 4em;
+    font-weight: 600;
+    color: var(--second-color);
+}
+.main-header_line{
+    padding-bottom: 30px;
+    font-size: 1.5em;
+    font-weight: 200;
+    color: var(--second-color);
+}
+.main-header_btn{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+
+    background-color: var(--second-color);
+    border-radius: 3px;
+    font-size: 1.5em;
+    font-weight: 600;
+    color: var(--main-color);
+}
+
+/*-Main Section*/
+.main-section{
+    border-top: 1px solid #aaa;
+    color: var(--back-color);
+}
+.main-header + .main-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding-left: 20px;
+    padding-right: 20px;
+    color: var(--second-color);
+}
+.main-section_title{
+    padding: 10px;
+    text-align: center;
+    font-size: 2em;
+}
+
+/*-News-*/
+.news{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.card{
+    width: 200px;
+    margin: 10px;
+    cursor: pointer;
+}
+.card_img{
+    height: 250px;
+    background-color: #eee;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid #aaa;
+    border-radius: 4px 4px 0 0;
+}
+.card_title{
+    height: 44px;
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #aaa;
+    border-top: 0;
+    border-radius: 0 0 4px 4px;
+    font-size: 1.2em;
+    overflow: hidden;
+}
+.card_title > p{
+    min-width: 100%;
+    width: max-content;
+}
+
+
+.lecteur{
+    text-align: center;
+    margin: 40px;
+}
+.lecteur_link{
+    font-size: 1.8em;
+}
+.lecteur_link:hover{
+    color: var(--hight-color);
+}
+
+@media (max-width: 600px), (max-aspect-ratio: 10/12) {
+    .card{
+      width: 400px;
+    }
+    .card_img{
+        height: 500px;
+    }
+    .card_title{
+        height: 88px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .card_title p{
+        font-size: 28px;
+    }
+}
